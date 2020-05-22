@@ -10,6 +10,7 @@ def authenticated(fn):
         return fn(*args, **kwargs)
   return wrapper
 
+
 @authenticated
 def message_friends(user):
     print('message has been sent')
